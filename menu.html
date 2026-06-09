@@ -1,0 +1,237 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tulip Cafe Menu</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#383aa3,#5c5fcf);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* Menu Grid */
+
+.menu-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.menu-card h2{
+    color:#383aa3;
+    margin-bottom:15px;
+    border-bottom:3px solid #383aa3;
+    padding-bottom:10px;
+}
+
+.menu-card ul{
+    list-style:none;
+}
+
+.menu-card li{
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+}
+
+/* Signature Section */
+
+.signature{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.signature h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#383aa3;
+}
+
+.signature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.signature-item{
+    background:#383aa3;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:15px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:#383aa3;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☕ Tulip Cafe</h1>
+    <p>Fresh Coffee • Delicious Food • Great Atmosphere</p>
+</header>
+
+<div class="menu-container">
+
+    <div class="menu-card">
+        <h2>☕ Coffee & Hot Drinks</h2>
+        <ul>
+            <li>Espresso</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Americano</li>
+            <li>Mocha</li>
+            <li>Hot Chocolate</li>
+        </ul>
+    </div>
+
+    <div class="menu-card">
+        <h2>🥤 Cold Drinks</h2>
+        <ul>
+            <li>Coke</li>
+            <li>Pepsi</li>
+            <li>Sprite</li>
+            <li>Fanta</li>
+            <li>Iced Coffee</li>
+            <li>Oreo Shake</li>
+        </ul>
+    </div>
+
+    <div class="menu-card">
+        <h2>🥟 Momo Corner</h2>
+        <ul>
+            <li>Chicken Momo</li>
+            <li>Veg Momo</li>
+            <li>C Momo</li>
+            <li>Jhol Momo</li>
+            <li>Fried Momo</li>
+        </ul>
+    </div>
+
+    <div class="menu-card">
+        <h2>🍔 Burgers & Sandwiches</h2>
+        <ul>
+            <li>Chicken Burger</li>
+            <li>Crispy Chicken Burger</li>
+            <li>Veg Burger</li>
+            <li>Club Sandwich</li>
+            <li>Cheese Sandwich</li>
+        </ul>
+    </div>
+
+    <div class="menu-card">
+        <h2>🍕 Pizza</h2>
+        <ul>
+            <li>Margherita Pizza</li>
+            <li>Veg Pizza</li>
+            <li>Chicken Pizza</li>
+            <li>BBQ Chicken Pizza</li>
+        </ul>
+    </div>
+
+    <div class="menu-card">
+        <h2>🍝 Pasta & Noodles</h2>
+        <ul>
+            <li>White Sauce Pasta</li>
+            <li>Chicken Pasta</li>
+            <li>Veg Chowmein</li>
+            <li>Chicken Chowmein</li>
+        </ul>
+    </div>
+
+</div>
+
+<section class="signature">
+
+    <h2>🌟 Tulip Cafe Specials</h2>
+
+    <div class="signature-grid">
+
+        <div class="signature-item">
+            ☕ Tulip Special Coffee
+        </div>
+
+        <div class="signature-item">
+            🍔 Tulip Chicken Burger
+        </div>
+
+        <div class="signature-item">
+            🥟 Tulip Cheese Momo
+        </div>
+
+        <div class="signature-item">
+            🍟 Tulip Loaded Fries
+        </div>
+
+        <div class="signature-item">
+            🥤 Tulip Oreo Shake
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>Tulip Cafe Salghari</h3>
+    <p>📍 Mechinagar-8, Nepal</p>
+    <p>📞 9706382779</p>
+</footer>
+<a href="index.html" class="btn">← Back to Home</a>
+</body>
+</html>
+```

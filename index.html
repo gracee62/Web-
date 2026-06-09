@@ -1,0 +1,329 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tulip Cafe Salghari</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:#383aa3;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero Section */
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#383aa3;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin:5px;
+}
+
+.btn:hover{
+    background:#5c5fcf;
+}
+
+/* Section */
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* Features */
+.features{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.feature-card{
+    background:white;
+    padding:25px;
+    width:250px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Menu */
+.menu-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.menu-card{
+    background:white;
+    width:280px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-card h3{
+    margin-bottom:10px;
+    color:#383aa3;
+}
+
+.menu-card ul{
+    list-style:none;
+}
+
+.menu-card li{
+    padding:5px 0;
+}
+
+/* Contact */
+.contact{
+    background:white;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    background:#383aa3;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:35px;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
+.button-container{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.view-menu-btn{
+    background-color: #383aa3;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.view-menu-btn:hover{
+    background-color: #5c5fcf;
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">Tulip Cafe</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Tulip Cafe Salghari</h1>
+        <p>Fresh Coffee • Delicious Food • Great Atmosphere</p>
+
+        <a href="#" class="btn">View Menu</a>
+        <a href="#" class="btn">Order Now</a>
+    </div>
+</section>
+
+<!-- Features -->
+<section>
+    <h2 class="section-title">Why Choose Us?</h2>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>Fresh Food</h3>
+            <p>Prepared daily with quality ingredients.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Best Coffee</h3>
+            <p>Freshly brewed coffee every day.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Affordable</h3>
+            <p>Great food at fair prices.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Family Friendly</h3>
+            <p>Comfortable place for everyone.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Menu -->
+<section>
+    <h2 class="section-title">Popular Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <h3>Coffee & Drinks</h3>
+            <ul>
+                <li>Coffee - Rs.150</li>
+                <li>Espresso - Rs.180</li>
+                <li>Cappuccino - Rs.200</li>
+                <li>Latte - Rs.220</li>
+            </ul>
+        </div>
+
+        <div class="menu-card">
+            <h3>Non Veg</h3>
+            <ul>
+                <li>Chicken Momo - Rs.220</li>
+                <li>Chicken Burger - Rs.250</li>
+                <li>Chicken Pizza - Rs.350</li>
+                <li>Chicken Pasta - Rs.300</li>
+            </ul>
+        </div>
+
+        <div class="menu-card">
+            <h3>Veg Items</h3>
+            <ul>
+                <li>Veg Momo - Rs.180</li>
+                <li>Veg Burger - Rs.220</li>
+                <li>Veg Pizza - Rs.300</li>
+                <li>Veg Pasta - Rs.250</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section>
+    <h2 class="section-title">About Us</h2>
+
+    <p style="text-align:center;">
+        Tulip Cafe Salghari offers fresh coffee, delicious food,
+        and a welcoming atmosphere for students, families,
+        and visitors.
+    </p>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <p>📍 Salghari School, Mechinagar-8, Nepal</p>
+    <p>📞 9706382779</p>
+    <p>✉️ urgenurgen498@gmail.com</p>
+
+    <p><strong>Opening Hours</strong></p>
+    <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
+    <p>Sat - Sun: 9:00 AM - 10:00 PM</p>
+
+</section>
+
+<footer>
+    <p>© 2026 Tulip Cafe Salghari | All Rights Reserved</p>
+</footer>
+<div class="button-container">
+    <a href="menu.html" class="view-menu-btn">View Menu</a>
+</div>
+</body>
+</html>
+```
